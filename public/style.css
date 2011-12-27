@@ -1,0 +1,113 @@
+html, body, * {
+	margin: 0;
+	padding: 0;
+	font-family: "Helvetica", Arial;
+}
+
+header {
+	width: 100%;
+	height: 80px;
+	background: -webkit-linear-gradient(rgba(70,70,70,0.8), rgba(35,35,35,0.8));
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+}
+
+header h1 {
+	margin: 20px 20px;
+	display: block;
+	float: left;
+	color: white;
+	text-shadow: 0 1px 0 black ;
+}
+
+.navbutton {
+	position: fixed;
+	right: 24px;
+	top: 0;
+}
+
+.navbutton span {
+	margin-top: 24px;
+	float: left;
+	display: block;
+	font-size: 1.4em;
+	padding: 2px 6px;
+	-webkit-border-radius: 7px;
+	box-shadow: inset 0 -1px 0 rgba(255,255,255,0.3), 0 1px 0px rgba(0,0,0,0.5);
+}
+
+.navbutton.red span {
+	background: -webkit-linear-gradient(orange, red);
+	border: 1px solid #601800;
+}
+
+.navbutton.green span {
+	background:-webkit-linear-gradient(#00cf01, green);
+	border: 1px solid #005200;
+}
+
+#paybutton span:first-child {
+	-webkit-border-top-right-radius: 0;
+	-webkit-border-bottom-right-radius: 0;
+}
+
+#paybutton span:last-child {
+	-webkit-border-top-left-radius: 0;
+	-webkit-border-bottom-left-radius: 0;
+	border-left: 1px solid rgba(255,255,255, 0.3);
+	padding: 1px 6px 3px 5px;
+}
+
+#container, #logincontainer {
+	position: absolute;
+	top: 80px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #e4e4e4;
+}
+
+#logincontainer label {
+	display: block;
+	margin-left: 20px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+#logincontainer input {
+	width: 280px;
+	margin-left: 20px;
+	height: 22px;
+}
+
+#logincontainer input[type="submit"] {
+	visibility: hidden;
+}
+
+#container div {
+	width: 100%;
+	height: 60px;
+	background: -webkit-linear-gradient(#f5f5f5, #e4e4e4);
+	border-bottom: 1px solid #ccc;
+	border-top: 1px solid white;
+	position: relative;
+}
+
+.alien {
+	color: #999;
+}
+
+#container span.subject {
+	position: absolute;
+	left: 20px;
+	top: 21px;
+	font-weight: normal;
+}
+
+#container span.value {
+	position: absolute;
+	right: 20px;
+	top: 21px;
+}

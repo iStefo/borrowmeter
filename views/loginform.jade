@@ -1,0 +1,15 @@
+header
+	h1 Borrowmeter
+	#loginbutton.navbutton.green
+		span Login
+#logincontainer
+	form#loginform(method="post", action="/login/")
+		label(for="user[name]") User:<br />
+		input(type="text", name="user[name]")<br />
+		label(for="user[pass]") Password:<br />
+		input(type="password", name="user[pass]")
+		input#loginsubmit(type="submit", name="submit")
+script
+	$('#loginbutton span').click(function() {
+		$('#loginsubmit').click();
+	});

@@ -1,0 +1,27 @@
+header
+	h1 #{name}
+	if balance > 0
+		#paybutton.navbutton.green
+			span #{balance/100}
+			span +
+	else
+		#paybutton.navbutton.red
+			span #{balance/100}
+			span +
+#container
+	for payment in payments
+		if payment.by == name
+			.payment
+				span.subject #{payment.subject}
+				span.value #{payment.value/100}
+		else
+			.payment.alien
+				span.subject #{payment.subject}
+				span.value -#{payment.value/100}
+div(style="width:0; height: 0; visibility: hidden")
+	form#payform(method="get", action="/pay")
+script
+	$('#paybutton').click(function() {
+		$('#payform').submit();
+		//location.replace('/pay');
+	});

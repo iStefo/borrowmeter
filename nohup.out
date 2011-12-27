@@ -1,0 +1,823 @@
+mongod --help for help and startup options
+Mon Dec 26 20:57:38 [initandlisten] MongoDB starting : pid=4193 port=27017 dbpath=/data/db/ 64-bit 
+Mon Dec 26 20:57:38 [initandlisten] db version v1.8.2, pdfile version 4.5
+Mon Dec 26 20:57:38 [initandlisten] git version: 433bbaa14aaba6860da15bd4de8edf600f56501b
+Mon Dec 26 20:57:38 [initandlisten] build sys info: Darwin erh2.10gen.cc 9.6.0 Darwin Kernel Version 9.6.0: Mon Nov 24 17:37:00 PST 2008; root:xnu-1228.9.59~1/RELEASE_I386 i386 BOOST_LIB_VERSION=1_40
+Mon Dec 26 20:57:38 [initandlisten] waiting for connections on port 27017
+Mon Dec 26 20:57:38 [websvr] web admin interface listening on port 28017
+Mon Dec 26 21:07:17 [initandlisten] connection accepted from 127.0.0.1:57403 #1
+Mon Dec 26 21:07:17 [FileAllocator] allocating new datafile /data/db/test.ns, filling with zeroes...
+Mon Dec 26 21:07:17 [FileAllocator] done allocating datafile /data/db/test.ns, size: 16MB,  took 0.044 secs
+Mon Dec 26 21:07:17 [FileAllocator] allocating new datafile /data/db/test.0, filling with zeroes...
+Mon Dec 26 21:07:17 [FileAllocator] done allocating datafile /data/db/test.0, size: 64MB,  took 0.019 secs
+Mon Dec 26 21:07:17 [FileAllocator] allocating new datafile /data/db/test.1, filling with zeroes...
+Mon Dec 26 21:07:17 [conn1] building new index on { _id: 1 } for test.test_insert
+Mon Dec 26 21:07:17 [conn1] done for 0 records 0.009secs
+Mon Dec 26 21:07:17 [conn1] insert test.test_insert 591ms
+Mon Dec 26 21:07:17 [conn1] end connection 127.0.0.1:57403
+Mon Dec 26 21:07:17 [FileAllocator] done allocating datafile /data/db/test.1, size: 128MB,  took 0.066 secs
+Mon Dec 26 21:07:38 [initandlisten] connection accepted from 127.0.0.1:57408 #2
+Mon Dec 26 21:07:38 [conn2] end connection 127.0.0.1:57408
+Mon Dec 26 21:09:37 [initandlisten] connection accepted from 127.0.0.1:57413 #3
+Mon Dec 26 21:09:37 [conn3] end connection 127.0.0.1:57413
+Mon Dec 26 21:11:25 [initandlisten] connection accepted from 127.0.0.1:57423 #4
+Mon Dec 26 21:11:25 [conn4] end connection 127.0.0.1:57423
+Mon Dec 26 21:12:43 [initandlisten] connection accepted from 127.0.0.1:57425 #5
+Mon Dec 26 21:12:46 [conn5] end connection 127.0.0.1:57425
+Mon Dec 26 21:12:50 [initandlisten] connection accepted from 127.0.0.1:57426 #6
+Mon Dec 26 21:14:19 [conn6] building new index on { _id: 1 } for test.test
+Mon Dec 26 21:14:19 [conn6] done for 0 records 0secs
+Mon Dec 26 21:15:53 [initandlisten] connection accepted from 127.0.0.1:57470 #7
+Mon Dec 26 21:18:17 [conn7] end connection 127.0.0.1:57470
+Mon Dec 26 21:18:19 [initandlisten] connection accepted from 127.0.0.1:57484 #8
+Mon Dec 26 21:18:19 [conn8] end connection 127.0.0.1:57484
+Mon Dec 26 21:25:17 [initandlisten] connection accepted from 127.0.0.1:57755 #9
+Mon Dec 26 21:25:17 [conn9] end connection 127.0.0.1:57755
+Mon Dec 26 21:25:40 [initandlisten] connection accepted from 127.0.0.1:57763 #10
+Mon Dec 26 21:25:40 [conn10] end connection 127.0.0.1:57763
+Mon Dec 26 21:25:52 [initandlisten] connection accepted from 127.0.0.1:57766 #11
+Mon Dec 26 21:25:52 [conn11] end connection 127.0.0.1:57766
+Mon Dec 26 21:26:07 [initandlisten] connection accepted from 127.0.0.1:57769 #12
+Mon Dec 26 21:26:14 [conn12] end connection 127.0.0.1:57769
+Mon Dec 26 21:26:16 [initandlisten] connection accepted from 127.0.0.1:57773 #13
+Mon Dec 26 21:26:16 [conn13] end connection 127.0.0.1:57773
+Mon Dec 26 21:26:25 [initandlisten] connection accepted from 127.0.0.1:57782 #14
+Mon Dec 26 21:26:57 [conn14] end connection 127.0.0.1:57782
+Mon Dec 26 21:26:59 [initandlisten] connection accepted from 127.0.0.1:57786 #15
+Mon Dec 26 21:27:04 [initandlisten] connection accepted from 127.0.0.1:57787 #16
+Mon Dec 26 21:27:29 [conn16] end connection 127.0.0.1:57787
+Mon Dec 26 21:27:29 [conn15] end connection 127.0.0.1:57786
+Mon Dec 26 21:27:31 [initandlisten] connection accepted from 127.0.0.1:57790 #17
+Mon Dec 26 21:29:41 [initandlisten] connection accepted from 127.0.0.1:57798 #18
+Mon Dec 26 21:29:46 [conn18] end connection 127.0.0.1:57798
+Mon Dec 26 21:29:46 [conn17] end connection 127.0.0.1:57790
+Mon Dec 26 21:29:48 [initandlisten] connection accepted from 127.0.0.1:57801 #19
+Mon Dec 26 21:47:06 [conn19] end connection 127.0.0.1:57801
+Mon Dec 26 22:05:44 [initandlisten] connection accepted from 127.0.0.1:58173 #20
+Mon Dec 26 22:07:21 [conn20] end connection 127.0.0.1:58173
+Mon Dec 26 22:07:25 [initandlisten] connection accepted from 127.0.0.1:58189 #21
+Mon Dec 26 22:07:25 [conn21] end connection 127.0.0.1:58189
+Mon Dec 26 22:08:14 [initandlisten] connection accepted from 127.0.0.1:58192 #22
+Mon Dec 26 22:08:48 [conn22] end connection 127.0.0.1:58192
+Mon Dec 26 22:14:45 [initandlisten] connection accepted from 127.0.0.1:58213 #23
+Mon Dec 26 22:17:53 [FileAllocator] allocating new datafile /data/db/borrowmeter.ns, filling with zeroes...
+Mon Dec 26 22:17:53 [FileAllocator] done allocating datafile /data/db/borrowmeter.ns, size: 16MB,  took 0.007 secs
+Mon Dec 26 22:17:53 [FileAllocator] allocating new datafile /data/db/borrowmeter.0, filling with zeroes...
+Mon Dec 26 22:17:53 [FileAllocator] done allocating datafile /data/db/borrowmeter.0, size: 64MB,  took 0.021 secs
+Mon Dec 26 22:17:53 [FileAllocator] allocating new datafile /data/db/borrowmeter.1, filling with zeroes...
+Mon Dec 26 22:17:53 [conn23] building new index on { _id: 1 } for borrowmeter.user
+Mon Dec 26 22:17:53 [conn23] done for 0 records 0.019secs
+Mon Dec 26 22:17:53 [conn23] insert borrowmeter.user 316ms
+Mon Dec 26 22:17:53 [FileAllocator] done allocating datafile /data/db/borrowmeter.1, size: 128MB,  took 0.062 secs
+Mon Dec 26 22:19:37 [initandlisten] connection accepted from 127.0.0.1:58229 #24
+Mon Dec 26 22:20:10 [conn24] end connection 127.0.0.1:58229
+Mon Dec 26 22:20:42 [initandlisten] connection accepted from 127.0.0.1:58233 #25
+Mon Dec 26 22:21:26 [initandlisten] connection accepted from 127.0.0.1:58234 #26
+Mon Dec 26 22:22:13 [conn26] end connection 127.0.0.1:58234
+Mon Dec 26 22:22:13 [conn25] end connection 127.0.0.1:58233
+Mon Dec 26 22:22:22 [initandlisten] connection accepted from 127.0.0.1:58248 #27
+Mon Dec 26 22:22:22 [conn27] end connection 127.0.0.1:58248
+Mon Dec 26 22:23:09 [initandlisten] connection accepted from 127.0.0.1:58255 #28
+Mon Dec 26 22:23:09 [conn28] end connection 127.0.0.1:58255
+Mon Dec 26 22:24:27 [initandlisten] connection accepted from 127.0.0.1:58268 #29
+Mon Dec 26 22:24:57 [conn29] end connection 127.0.0.1:58268
+Mon Dec 26 22:25:14 [initandlisten] connection accepted from 127.0.0.1:58278 #30
+Mon Dec 26 22:26:04 [conn30] end connection 127.0.0.1:58278
+Mon Dec 26 22:26:15 [initandlisten] connection accepted from 127.0.0.1:58285 #31
+Mon Dec 26 22:26:43 [conn31] end connection 127.0.0.1:58285
+Mon Dec 26 22:26:51 [initandlisten] connection accepted from 127.0.0.1:58298 #32
+Mon Dec 26 22:27:06 [conn32] end connection 127.0.0.1:58298
+Mon Dec 26 22:27:18 [initandlisten] connection accepted from 127.0.0.1:58304 #33
+Mon Dec 26 22:27:52 [conn33] end connection 127.0.0.1:58304
+Mon Dec 26 22:28:02 [initandlisten] connection accepted from 127.0.0.1:58310 #34
+Mon Dec 26 22:28:31 [conn34] end connection 127.0.0.1:58310
+Mon Dec 26 22:28:43 [initandlisten] connection accepted from 127.0.0.1:58319 #35
+Mon Dec 26 22:29:30 [conn35] end connection 127.0.0.1:58319
+Mon Dec 26 22:29:42 [initandlisten] connection accepted from 127.0.0.1:58326 #36
+Mon Dec 26 22:30:11 [conn36] end connection 127.0.0.1:58326
+Mon Dec 26 22:30:19 [initandlisten] connection accepted from 127.0.0.1:58340 #37
+Mon Dec 26 22:32:19 [conn37] end connection 127.0.0.1:58340
+Mon Dec 26 22:32:31 [initandlisten] connection accepted from 127.0.0.1:58348 #38
+Mon Dec 26 22:32:41 [conn38] end connection 127.0.0.1:58348
+Mon Dec 26 22:32:52 [initandlisten] connection accepted from 127.0.0.1:58355 #39
+Mon Dec 26 22:32:52 [conn39] end connection 127.0.0.1:58355
+Mon Dec 26 22:34:10 [initandlisten] connection accepted from 127.0.0.1:58361 #40
+Mon Dec 26 22:35:04 [conn40] end connection 127.0.0.1:58361
+Mon Dec 26 22:35:54 [initandlisten] connection accepted from 127.0.0.1:58378 #41
+Mon Dec 26 22:36:06 [conn41] end connection 127.0.0.1:58378
+Mon Dec 26 22:36:14 [initandlisten] connection accepted from 127.0.0.1:58381 #42
+Mon Dec 26 22:38:06 [conn42] end connection 127.0.0.1:58381
+Mon Dec 26 22:38:13 [initandlisten] connection accepted from 127.0.0.1:58393 #43
+Mon Dec 26 22:38:19 [initandlisten] connection accepted from 127.0.0.1:58400 #44
+Mon Dec 26 22:38:19 [conn44] end connection 127.0.0.1:58400
+Mon Dec 26 22:38:19 [conn43] end connection 127.0.0.1:58393
+Mon Dec 26 22:39:20 [initandlisten] connection accepted from 127.0.0.1:58407 #45
+Mon Dec 26 22:39:26 [initandlisten] connection accepted from 127.0.0.1:58408 #46
+Mon Dec 26 22:39:26 [conn46] end connection 127.0.0.1:58408
+Mon Dec 26 22:39:26 [conn45] end connection 127.0.0.1:58407
+Mon Dec 26 22:40:00 [initandlisten] connection accepted from 127.0.0.1:58414 #47
+Mon Dec 26 22:40:00 [conn47] end connection 127.0.0.1:58414
+Mon Dec 26 22:42:36 [initandlisten] connection accepted from 127.0.0.1:58586 #48
+Mon Dec 26 22:43:02 [conn48] end connection 127.0.0.1:58586
+Mon Dec 26 22:43:09 [initandlisten] connection accepted from 127.0.0.1:58589 #49
+Mon Dec 26 22:43:09 [conn49] end connection 127.0.0.1:58589
+Mon Dec 26 22:43:57 [initandlisten] connection accepted from 127.0.0.1:58599 #50
+Mon Dec 26 22:44:16 [conn50] end connection 127.0.0.1:58599
+Mon Dec 26 22:44:24 [initandlisten] connection accepted from 127.0.0.1:58602 #51
+Mon Dec 26 22:44:24 [conn51] end connection 127.0.0.1:58602
+Mon Dec 26 22:47:54 [initandlisten] connection accepted from 127.0.0.1:58639 #52
+Mon Dec 26 22:48:43 [conn52] end connection 127.0.0.1:58639
+Mon Dec 26 22:48:51 [initandlisten] connection accepted from 127.0.0.1:58642 #53
+Mon Dec 26 23:05:08 [conn23] building new index on { _id: 1 } for borrowmeter.payment
+Mon Dec 26 23:05:08 [conn23] done for 0 records 0secs
+Mon Dec 26 23:10:10 [conn23] end connection 127.0.0.1:58213
+Mon Dec 26 23:10:11 [initandlisten] connection accepted from 127.0.0.1:59063 #54
+Mon Dec 26 23:10:12 [conn53] end connection 127.0.0.1:58642
+Mon Dec 26 23:10:17 [initandlisten] connection accepted from 127.0.0.1:59066 #55
+Mon Dec 26 23:10:17 [conn55] end connection 127.0.0.1:59066
+Mon Dec 26 23:11:03 [initandlisten] connection accepted from 127.0.0.1:59079 #56
+Mon Dec 26 23:11:03 [initandlisten] connection accepted from 127.0.0.1:59080 #57
+Mon Dec 26 23:11:03 [conn57] end connection 127.0.0.1:59080
+Mon Dec 26 23:11:03 [conn56] end connection 127.0.0.1:59079
+Mon Dec 26 23:11:26 [initandlisten] connection accepted from 127.0.0.1:59086 #58
+Mon Dec 26 23:11:26 [initandlisten] connection accepted from 127.0.0.1:59087 #59
+Mon Dec 26 23:11:26 [conn59] end connection 127.0.0.1:59087
+Mon Dec 26 23:11:26 [conn58] end connection 127.0.0.1:59086
+Mon Dec 26 23:12:47 [initandlisten] connection accepted from 127.0.0.1:59099 #60
+Mon Dec 26 23:12:47 [initandlisten] connection accepted from 127.0.0.1:59100 #61
+Mon Dec 26 23:13:53 [conn61] end connection 127.0.0.1:59100
+Mon Dec 26 23:13:53 [conn60] end connection 127.0.0.1:59099
+Mon Dec 26 23:14:04 [initandlisten] connection accepted from 127.0.0.1:59110 #62
+Mon Dec 26 23:14:04 [initandlisten] connection accepted from 127.0.0.1:59111 #63
+Mon Dec 26 23:16:04 [initandlisten] connection accepted from 127.0.0.1:59122 #64
+Mon Dec 26 23:17:16 [conn64] end connection 127.0.0.1:59122
+Mon Dec 26 23:17:16 [conn62] end connection 127.0.0.1:59110
+Mon Dec 26 23:17:16 [conn63] end connection 127.0.0.1:59111
+Mon Dec 26 23:17:28 [initandlisten] connection accepted from 127.0.0.1:59130 #65
+Mon Dec 26 23:17:28 [initandlisten] connection accepted from 127.0.0.1:59131 #66
+Mon Dec 26 23:59:18 [conn66] end connection 127.0.0.1:59131
+Mon Dec 26 23:59:18 [conn65] end connection 127.0.0.1:59130
+Mon Dec 26 23:59:28 [initandlisten] connection accepted from 127.0.0.1:59863 #67
+Mon Dec 26 23:59:28 [initandlisten] connection accepted from 127.0.0.1:59864 #68
+Tue Dec 27 00:02:55 [conn68] end connection 127.0.0.1:59864
+Tue Dec 27 00:02:55 [conn67] end connection 127.0.0.1:59863
+Tue Dec 27 00:03:05 [initandlisten] connection accepted from 127.0.0.1:59878 #69
+Tue Dec 27 00:03:05 [initandlisten] connection accepted from 127.0.0.1:59879 #70
+Tue Dec 27 00:04:04 [conn70] end connection 127.0.0.1:59879
+Tue Dec 27 00:04:04 [conn69] end connection 127.0.0.1:59878
+Tue Dec 27 00:04:13 [initandlisten] connection accepted from 127.0.0.1:59882 #71
+Tue Dec 27 00:04:13 [initandlisten] connection accepted from 127.0.0.1:59883 #72
+Tue Dec 27 00:05:59 [initandlisten] connection accepted from 127.0.0.1:59887 #73
+Tue Dec 27 00:06:00 [initandlisten] connection accepted from 127.0.0.1:59888 #74
+Tue Dec 27 00:09:23 [conn74] end connection 127.0.0.1:59888
+Tue Dec 27 00:09:23 [conn72] end connection 127.0.0.1:59883
+Tue Dec 27 00:09:23 [conn71] end connection 127.0.0.1:59882
+Tue Dec 27 00:09:23 [conn73] end connection 127.0.0.1:59887
+Tue Dec 27 00:09:36 [initandlisten] connection accepted from 127.0.0.1:59904 #75
+Tue Dec 27 00:09:36 [initandlisten] connection accepted from 127.0.0.1:59905 #76
+Tue Dec 27 00:12:43 [conn76] end connection 127.0.0.1:59905
+Tue Dec 27 00:12:43 [conn75] end connection 127.0.0.1:59904
+Tue Dec 27 00:12:52 [initandlisten] connection accepted from 127.0.0.1:59938 #77
+Tue Dec 27 00:12:52 [initandlisten] connection accepted from 127.0.0.1:59939 #78
+Tue Dec 27 00:14:00 [conn78] end connection 127.0.0.1:59939
+Tue Dec 27 00:14:00 [conn77] end connection 127.0.0.1:59938
+Tue Dec 27 00:14:08 [initandlisten] connection accepted from 127.0.0.1:59943 #79
+Tue Dec 27 00:14:08 [initandlisten] connection accepted from 127.0.0.1:59944 #80
+Tue Dec 27 00:15:44 [initandlisten] connection accepted from 127.0.0.1:59955 #81
+Tue Dec 27 00:15:52 [initandlisten] connection accepted from 127.0.0.1:59956 #82
+Tue Dec 27 00:16:06 [initandlisten] connection accepted from 127.0.0.1:59957 #83
+Tue Dec 27 00:16:15 [initandlisten] connection accepted from 127.0.0.1:59958 #84
+Tue Dec 27 00:16:42 [initandlisten] connection accepted from 127.0.0.1:59960 #85
+Tue Dec 27 00:25:28 [conn85] end connection 127.0.0.1:59960
+Tue Dec 27 00:25:28 [conn82] end connection 127.0.0.1:59956
+Tue Dec 27 00:25:28 [conn81] end connection 127.0.0.1:59955
+Tue Dec 27 00:25:28 [conn83] end connection 127.0.0.1:59957
+Tue Dec 27 00:25:28 [conn84] end connection 127.0.0.1:59958
+Tue Dec 27 00:25:28 [conn80] end connection 127.0.0.1:59944
+Tue Dec 27 00:25:28 [conn79] end connection 127.0.0.1:59943
+Tue Dec 27 00:25:39 [initandlisten] connection accepted from 127.0.0.1:60057 #86
+Tue Dec 27 00:25:39 [initandlisten] connection accepted from 127.0.0.1:60058 #87
+Tue Dec 27 00:25:53 [initandlisten] connection accepted from 127.0.0.1:60059 #88
+Tue Dec 27 00:25:53 [initandlisten] connection accepted from 127.0.0.1:60060 #89
+Tue Dec 27 00:26:14 [initandlisten] connection accepted from 127.0.0.1:60061 #90
+Tue Dec 27 00:26:14 [initandlisten] connection accepted from 127.0.0.1:60062 #91
+Tue Dec 27 00:26:52 [conn91] end connection 127.0.0.1:60062
+Tue Dec 27 00:26:52 [conn89] end connection 127.0.0.1:60060
+Tue Dec 27 00:26:52 [conn87] end connection 127.0.0.1:60058
+Tue Dec 27 00:26:52 [conn88] end connection 127.0.0.1:60059
+Tue Dec 27 00:26:52 [conn90] end connection 127.0.0.1:60061
+Tue Dec 27 00:26:52 [conn86] end connection 127.0.0.1:60057
+Tue Dec 27 00:27:00 [initandlisten] connection accepted from 127.0.0.1:60071 #92
+Tue Dec 27 00:27:00 [initandlisten] connection accepted from 127.0.0.1:60072 #93
+Tue Dec 27 00:28:55 [initandlisten] connection accepted from 127.0.0.1:60097 #94
+Tue Dec 27 00:34:16 [conn54] end connection 127.0.0.1:59063
+Tue Dec 27 00:34:18 [initandlisten] connection accepted from 127.0.0.1:60155 #95
+Tue Dec 27 00:34:40 [conn95] building new index on { _id: 1 } for test.user
+Tue Dec 27 00:34:40 [conn95] done for 0 records 0secs
+Tue Dec 27 00:36:05 [conn93] end connection 127.0.0.1:60072
+Tue Dec 27 00:36:05 [conn94] end connection 127.0.0.1:60097
+Tue Dec 27 00:36:05 [conn92] end connection 127.0.0.1:60071
+Tue Dec 27 00:36:14 [initandlisten] connection accepted from 127.0.0.1:60162 #96
+Tue Dec 27 00:36:14 [initandlisten] connection accepted from 127.0.0.1:60163 #97
+Tue Dec 27 00:36:23 [initandlisten] connection accepted from 127.0.0.1:60164 #98
+Tue Dec 27 00:36:23 [initandlisten] connection accepted from 127.0.0.1:60165 #99
+Tue Dec 27 00:36:32 [initandlisten] connection accepted from 127.0.0.1:60166 #100
+Tue Dec 27 00:36:32 [initandlisten] connection accepted from 127.0.0.1:60167 #101
+Tue Dec 27 00:36:45 [initandlisten] connection accepted from 127.0.0.1:60168 #102
+Tue Dec 27 00:36:45 [initandlisten] connection accepted from 127.0.0.1:60169 #103
+Tue Dec 27 00:37:10 [conn103] end connection 127.0.0.1:60169
+Tue Dec 27 00:37:10 [conn101] end connection 127.0.0.1:60167
+Tue Dec 27 00:37:10 [conn102] end connection 127.0.0.1:60168
+Tue Dec 27 00:37:10 [conn100] end connection 127.0.0.1:60166
+Tue Dec 27 00:37:10 [conn99] end connection 127.0.0.1:60165
+Tue Dec 27 00:37:10 [conn97] end connection 127.0.0.1:60163
+Tue Dec 27 00:37:10 [conn98] end connection 127.0.0.1:60164
+Tue Dec 27 00:37:10 [conn96] end connection 127.0.0.1:60162
+Tue Dec 27 00:37:17 [initandlisten] connection accepted from 127.0.0.1:60176 #104
+Tue Dec 27 00:37:17 [initandlisten] connection accepted from 127.0.0.1:60177 #105
+Tue Dec 27 00:38:24 [initandlisten] connection accepted from 127.0.0.1:60185 #106
+Tue Dec 27 00:38:24 [initandlisten] connection accepted from 127.0.0.1:60186 #107
+Tue Dec 27 00:39:10 [initandlisten] connection accepted from 127.0.0.1:60191 #108
+Tue Dec 27 00:39:10 [initandlisten] connection accepted from 127.0.0.1:60192 #109
+Tue Dec 27 00:39:13 [initandlisten] connection accepted from 127.0.0.1:60193 #110
+Tue Dec 27 00:39:50 [initandlisten] connection accepted from 127.0.0.1:60194 #111
+Tue Dec 27 00:45:35 [conn111] end connection 127.0.0.1:60194
+Tue Dec 27 00:45:35 [conn110] end connection 127.0.0.1:60193
+Tue Dec 27 00:45:35 [conn108] end connection 127.0.0.1:60191
+Tue Dec 27 00:45:35 [conn107] end connection 127.0.0.1:60186
+Tue Dec 27 00:45:35 [conn109] end connection 127.0.0.1:60192
+Tue Dec 27 00:45:35 [conn106] end connection 127.0.0.1:60185
+Tue Dec 27 00:45:35 [conn105] end connection 127.0.0.1:60177
+Tue Dec 27 00:45:35 [conn104] end connection 127.0.0.1:60176
+Tue Dec 27 00:45:45 [initandlisten] connection accepted from 127.0.0.1:60210 #112
+Tue Dec 27 00:45:45 [initandlisten] connection accepted from 127.0.0.1:60211 #113
+Tue Dec 27 00:46:00 [initandlisten] connection accepted from 127.0.0.1:60212 #114
+Tue Dec 27 00:48:57 [initandlisten] connection accepted from 127.0.0.1:60281 #115
+Tue Dec 27 00:48:59 [initandlisten] connection accepted from 127.0.0.1:60282 #116
+Tue Dec 27 00:49:25 [initandlisten] connection accepted from 127.0.0.1:60284 #117
+Tue Dec 27 00:54:08 [initandlisten] connection accepted from 127.0.0.1:60332 #118
+Tue Dec 27 00:54:08 [initandlisten] connection accepted from 127.0.0.1:60333 #119
+Tue Dec 27 00:54:27 [initandlisten] connection accepted from 127.0.0.1:60348 #120
+Tue Dec 27 00:54:27 [initandlisten] connection accepted from 127.0.0.1:60349 #121
+Tue Dec 27 00:59:49 [conn121] end connection 127.0.0.1:60349
+Tue Dec 27 00:59:49 [conn118] end connection 127.0.0.1:60332
+Tue Dec 27 00:59:49 [conn116] end connection 127.0.0.1:60282
+Tue Dec 27 00:59:49 [conn114] end connection 127.0.0.1:60212
+Tue Dec 27 00:59:49 [conn120] end connection 127.0.0.1:60348
+Tue Dec 27 00:59:49 [conn119] end connection 127.0.0.1:60333
+Tue Dec 27 00:59:49 [conn113] end connection 127.0.0.1:60211
+Tue Dec 27 00:59:49 [conn117] end connection 127.0.0.1:60284
+Tue Dec 27 00:59:49 [conn112] end connection 127.0.0.1:60210
+Tue Dec 27 00:59:49 [conn115] end connection 127.0.0.1:60281
+Tue Dec 27 01:07:02 [initandlisten] connection accepted from 127.0.0.1:60456 #122
+Tue Dec 27 01:07:02 [initandlisten] connection accepted from 127.0.0.1:60457 #123
+Tue Dec 27 01:07:10 [initandlisten] connection accepted from 127.0.0.1:60460 #124
+Tue Dec 27 01:07:10 [initandlisten] connection accepted from 127.0.0.1:60461 #125
+Tue Dec 27 01:07:26 [initandlisten] connection accepted from 127.0.0.1:60466 #126
+Tue Dec 27 01:07:26 [initandlisten] connection accepted from 127.0.0.1:60467 #127
+Tue Dec 27 01:08:55 [initandlisten] connection accepted from 127.0.0.1:60473 #128
+Tue Dec 27 01:09:11 [initandlisten] connection accepted from 127.0.0.1:60474 #129
+Tue Dec 27 01:09:19 [initandlisten] connection accepted from 127.0.0.1:60475 #130
+Tue Dec 27 01:09:33 [initandlisten] connection accepted from 127.0.0.1:60479 #131
+Tue Dec 27 01:09:33 [initandlisten] connection accepted from 127.0.0.1:60480 #132
+Tue Dec 27 01:11:08 [initandlisten] connection accepted from 127.0.0.1:60496 #133
+Tue Dec 27 01:11:08 [initandlisten] connection accepted from 127.0.0.1:60497 #134
+Tue Dec 27 01:11:09 [initandlisten] connection accepted from 127.0.0.1:60498 #135
+Tue Dec 27 01:11:34 [initandlisten] connection accepted from 127.0.0.1:60502 #136
+Tue Dec 27 01:11:50 [initandlisten] connection accepted from 127.0.0.1:60506 #137
+Tue Dec 27 01:11:50 [initandlisten] connection accepted from 127.0.0.1:60507 #138
+Tue Dec 27 01:12:23 [initandlisten] connection accepted from 127.0.0.1:60514 #139
+Tue Dec 27 01:12:24 [initandlisten] connection accepted from 127.0.0.1:60515 #140
+Tue Dec 27 01:12:26 [initandlisten] connection accepted from 127.0.0.1:60516 #141
+Tue Dec 27 01:12:49 [initandlisten] connection accepted from 127.0.0.1:60520 #142
+Tue Dec 27 01:12:50 [initandlisten] connection accepted from 127.0.0.1:60521 #143
+Tue Dec 27 01:12:55 [initandlisten] connection accepted from 127.0.0.1:60524 #144
+Tue Dec 27 01:12:58 [initandlisten] connection accepted from 127.0.0.1:60525 #145
+Tue Dec 27 01:14:09 [initandlisten] connection accepted from 127.0.0.1:60529 #146
+Tue Dec 27 01:14:20 [initandlisten] connection accepted from 127.0.0.1:60536 #147
+Tue Dec 27 01:15:13 [initandlisten] connection accepted from 127.0.0.1:60542 #148
+Tue Dec 27 01:15:53 [initandlisten] connection accepted from 127.0.0.1:60543 #149
+Tue Dec 27 01:16:10 [initandlisten] connection accepted from 127.0.0.1:60544 #150
+Tue Dec 27 01:16:35 [initandlisten] connection accepted from 127.0.0.1:60546 #151
+Tue Dec 27 01:16:45 [initandlisten] connection accepted from 127.0.0.1:60547 #152
+Tue Dec 27 01:17:08 [initandlisten] connection accepted from 127.0.0.1:60548 #153
+Tue Dec 27 01:17:14 [initandlisten] connection accepted from 127.0.0.1:60552 #154
+Tue Dec 27 01:18:30 [initandlisten] connection accepted from 127.0.0.1:60564 #155
+Tue Dec 27 01:18:36 [initandlisten] connection accepted from 127.0.0.1:60565 #156
+Tue Dec 27 01:18:41 [initandlisten] connection accepted from 127.0.0.1:60566 #157
+Tue Dec 27 01:18:54 [initandlisten] connection accepted from 127.0.0.1:60567 #158
+Tue Dec 27 01:19:07 [initandlisten] connection accepted from 127.0.0.1:60568 #159
+Tue Dec 27 01:19:16 [initandlisten] connection accepted from 127.0.0.1:60569 #160
+Tue Dec 27 01:19:22 [initandlisten] connection accepted from 127.0.0.1:60570 #161
+Tue Dec 27 01:19:27 [initandlisten] connection accepted from 127.0.0.1:60572 #162
+Tue Dec 27 01:19:34 [initandlisten] connection accepted from 127.0.0.1:60573 #163
+Tue Dec 27 01:19:42 [initandlisten] connection accepted from 127.0.0.1:60574 #164
+Tue Dec 27 01:20:12 [initandlisten] connection accepted from 127.0.0.1:60575 #165
+Tue Dec 27 01:20:21 [initandlisten] connection accepted from 127.0.0.1:60576 #166
+Tue Dec 27 01:20:29 [initandlisten] connection accepted from 127.0.0.1:60577 #167
+Tue Dec 27 01:20:32 [initandlisten] connection accepted from 127.0.0.1:60581 #168
+Tue Dec 27 01:20:45 [initandlisten] connection accepted from 127.0.0.1:60582 #169
+Tue Dec 27 01:20:49 [initandlisten] connection accepted from 127.0.0.1:60583 #170
+Tue Dec 27 01:20:54 [initandlisten] connection accepted from 127.0.0.1:60584 #171
+Tue Dec 27 01:21:00 [initandlisten] connection accepted from 127.0.0.1:60588 #172
+Tue Dec 27 01:21:44 [initandlisten] connection accepted from 127.0.0.1:60591 #173
+Tue Dec 27 01:21:52 [initandlisten] connection accepted from 127.0.0.1:60592 #174
+Tue Dec 27 01:22:08 [initandlisten] connection accepted from 127.0.0.1:60597 #175
+Tue Dec 27 01:22:23 [initandlisten] connection accepted from 127.0.0.1:60610 #176
+Tue Dec 27 01:22:28 [initandlisten] connection accepted from 127.0.0.1:60612 #177
+Tue Dec 27 01:22:50 [initandlisten] connection accepted from 127.0.0.1:60613 #178
+Tue Dec 27 01:22:56 [initandlisten] connection accepted from 127.0.0.1:60616 #179
+Tue Dec 27 01:23:01 [initandlisten] connection accepted from 127.0.0.1:60617 #180
+Tue Dec 27 01:23:11 [initandlisten] connection accepted from 127.0.0.1:60618 #181
+Tue Dec 27 01:23:22 [initandlisten] connection accepted from 127.0.0.1:60622 #182
+Tue Dec 27 01:23:51 [initandlisten] connection accepted from 127.0.0.1:60623 #183
+Tue Dec 27 01:24:33 [initandlisten] connection accepted from 127.0.0.1:60626 #184
+Tue Dec 27 01:24:46 [initandlisten] connection accepted from 127.0.0.1:60627 #185
+Tue Dec 27 01:24:59 [initandlisten] connection accepted from 127.0.0.1:60628 #186
+Tue Dec 27 01:25:21 [initandlisten] connection accepted from 127.0.0.1:60629 #187
+Tue Dec 27 01:25:23 [initandlisten] connection accepted from 127.0.0.1:60634 #188
+Tue Dec 27 01:25:32 [initandlisten] connection accepted from 127.0.0.1:60635 #189
+Tue Dec 27 01:25:37 [initandlisten] connection accepted from 127.0.0.1:60639 #190
+Tue Dec 27 01:26:36 [initandlisten] connection accepted from 127.0.0.1:60649 #191
+Tue Dec 27 01:26:48 [initandlisten] connection accepted from 127.0.0.1:60650 #192
+Tue Dec 27 01:27:46 [initandlisten] connection accepted from 127.0.0.1:60653 #193
+Tue Dec 27 01:27:58 [initandlisten] connection accepted from 127.0.0.1:60654 #194
+Tue Dec 27 01:28:37 [initandlisten] connection accepted from 127.0.0.1:60656 #195
+Tue Dec 27 01:28:46 [initandlisten] connection accepted from 127.0.0.1:60657 #196
+Tue Dec 27 01:28:51 [initandlisten] connection accepted from 127.0.0.1:60658 #197
+Tue Dec 27 01:28:53 [initandlisten] connection accepted from 127.0.0.1:60659 #198
+Tue Dec 27 01:29:08 [initandlisten] connection accepted from 127.0.0.1:60660 #199
+Tue Dec 27 01:30:50 [initandlisten] connection accepted from 127.0.0.1:60758 #200
+Tue Dec 27 01:30:51 [initandlisten] connection accepted from 127.0.0.1:60759 #201
+Tue Dec 27 01:31:01 [initandlisten] connection accepted from 127.0.0.1:60780 #202
+Tue Dec 27 01:31:05 [initandlisten] connection accepted from 127.0.0.1:60781 #203
+Tue Dec 27 01:31:17 [initandlisten] connection accepted from 127.0.0.1:60796 #204
+Tue Dec 27 01:31:22 [initandlisten] connection accepted from 127.0.0.1:60797 #205
+Tue Dec 27 01:31:28 [initandlisten] connection accepted from 127.0.0.1:60799 #206
+Tue Dec 27 01:31:34 [initandlisten] connection accepted from 127.0.0.1:60812 #207
+Tue Dec 27 01:31:46 [initandlisten] connection accepted from 127.0.0.1:60824 #208
+Tue Dec 27 01:32:01 [initandlisten] connection accepted from 127.0.0.1:60960 #209
+Tue Dec 27 01:32:11 [initandlisten] connection accepted from 127.0.0.1:60961 #210
+Tue Dec 27 01:32:12 [initandlisten] connection accepted from 127.0.0.1:60962 #211
+Tue Dec 27 01:33:19 [initandlisten] connection accepted from 127.0.0.1:60981 #212
+Tue Dec 27 01:33:42 [initandlisten] connection accepted from 127.0.0.1:60982 #213
+Tue Dec 27 01:33:50 [initandlisten] connection accepted from 127.0.0.1:60983 #214
+Tue Dec 27 01:34:08 [initandlisten] connection accepted from 127.0.0.1:60984 #215
+Tue Dec 27 01:34:37 [initandlisten] connection accepted from 127.0.0.1:60999 #216
+Tue Dec 27 01:34:49 [initandlisten] connection accepted from 127.0.0.1:61000 #217
+Tue Dec 27 01:34:57 [initandlisten] connection accepted from 127.0.0.1:61001 #218
+Tue Dec 27 01:35:43 [initandlisten] connection accepted from 127.0.0.1:61005 #219
+Tue Dec 27 01:36:09 [initandlisten] connection accepted from 127.0.0.1:61008 #220
+Tue Dec 27 01:37:57 [initandlisten] connection accepted from 127.0.0.1:61016 #221
+Tue Dec 27 01:38:15 [initandlisten] connection accepted from 127.0.0.1:61020 #222
+Tue Dec 27 01:38:30 [initandlisten] connection accepted from 127.0.0.1:61037 #223
+Tue Dec 27 01:40:18 [initandlisten] connection accepted from 127.0.0.1:61045 #224
+Tue Dec 27 01:40:44 [initandlisten] connection accepted from 127.0.0.1:61047 #225
+Tue Dec 27 01:41:08 [initandlisten] connection accepted from 127.0.0.1:61051 #226
+Tue Dec 27 01:41:59 [initandlisten] connection accepted from 127.0.0.1:61054 #227
+Tue Dec 27 01:42:05 [initandlisten] connection accepted from 127.0.0.1:61058 #228
+Tue Dec 27 01:42:32 [initandlisten] connection accepted from 127.0.0.1:61072 #229
+Tue Dec 27 01:42:35 [initandlisten] connection accepted from 127.0.0.1:61076 #230
+Tue Dec 27 01:42:40 [initandlisten] connection accepted from 127.0.0.1:61077 #231
+Tue Dec 27 01:42:43 [initandlisten] connection accepted from 127.0.0.1:61078 #232
+Tue Dec 27 01:43:33 [initandlisten] connection accepted from 127.0.0.1:61139 #233
+Tue Dec 27 01:43:46 [initandlisten] connection accepted from 127.0.0.1:61142 #234
+Tue Dec 27 01:44:13 [initandlisten] connection accepted from 127.0.0.1:61143 #235
+Tue Dec 27 01:44:18 [initandlisten] connection accepted from 127.0.0.1:61144 #236
+Tue Dec 27 01:44:31 [initandlisten] connection accepted from 127.0.0.1:61145 #237
+Tue Dec 27 01:44:36 [initandlisten] connection accepted from 127.0.0.1:61147 #238
+Tue Dec 27 01:44:42 [initandlisten] connection accepted from 127.0.0.1:61148 #239
+Tue Dec 27 01:44:55 [initandlisten] connection accepted from 127.0.0.1:61149 #240
+Tue Dec 27 01:44:56 [initandlisten] connection accepted from 127.0.0.1:61150 #241
+Tue Dec 27 01:44:57 [initandlisten] connection accepted from 127.0.0.1:61151 #242
+Tue Dec 27 01:46:04 [initandlisten] connection accepted from 127.0.0.1:61177 #243
+Tue Dec 27 01:46:16 [initandlisten] connection accepted from 127.0.0.1:61178 #244
+Tue Dec 27 01:46:26 [initandlisten] connection accepted from 127.0.0.1:61196 #245
+Tue Dec 27 01:46:33 [initandlisten] connection accepted from 127.0.0.1:61197 #246
+Tue Dec 27 01:46:39 [initandlisten] connection accepted from 127.0.0.1:61198 #247
+Tue Dec 27 01:46:40 [initandlisten] connection accepted from 127.0.0.1:61199 #248
+Tue Dec 27 01:47:20 [initandlisten] connection accepted from 127.0.0.1:61260 #249
+Tue Dec 27 01:47:30 [initandlisten] connection accepted from 127.0.0.1:61314 #250
+Tue Dec 27 01:47:38 [initandlisten] connection accepted from 127.0.0.1:61318 #251
+Tue Dec 27 01:48:07 [initandlisten] connection accepted from 127.0.0.1:61327 #252
+Tue Dec 27 01:48:16 [initandlisten] connection accepted from 127.0.0.1:61328 #253
+Tue Dec 27 01:48:20 [initandlisten] connection accepted from 127.0.0.1:61332 #254
+Tue Dec 27 01:48:36 [initandlisten] connection accepted from 127.0.0.1:61333 #255
+Tue Dec 27 01:48:54 [initandlisten] connection accepted from 127.0.0.1:61337 #256
+Tue Dec 27 01:50:00 [initandlisten] connection accepted from 127.0.0.1:61342 #257
+Tue Dec 27 01:50:03 [initandlisten] connection accepted from 127.0.0.1:61346 #258
+Tue Dec 27 01:50:40 [initandlisten] connection accepted from 127.0.0.1:61354 #259
+Tue Dec 27 01:50:47 [initandlisten] connection accepted from 127.0.0.1:61358 #260
+Tue Dec 27 01:51:16 [initandlisten] connection accepted from 127.0.0.1:61359 #261
+Tue Dec 27 01:51:49 [initandlisten] connection accepted from 127.0.0.1:61360 #262
+Tue Dec 27 01:52:20 [initandlisten] connection accepted from 127.0.0.1:61367 #263
+Tue Dec 27 01:52:53 [initandlisten] connection accepted from 127.0.0.1:61370 #264
+Tue Dec 27 01:53:04 [initandlisten] connection accepted from 127.0.0.1:61372 #265
+Tue Dec 27 01:53:49 [initandlisten] connection accepted from 127.0.0.1:61373 #266
+Tue Dec 27 01:54:14 [initandlisten] connection accepted from 127.0.0.1:61377 #267
+Tue Dec 27 01:54:21 [initandlisten] connection accepted from 127.0.0.1:61384 #268
+Tue Dec 27 01:54:34 [initandlisten] connection accepted from 127.0.0.1:61388 #269
+Tue Dec 27 01:54:41 [initandlisten] connection accepted from 127.0.0.1:61389 #270
+Tue Dec 27 01:55:09 [initandlisten] connection accepted from 127.0.0.1:61393 #271
+Tue Dec 27 01:55:55 [initandlisten] connection accepted from 127.0.0.1:61398 #272
+Tue Dec 27 01:55:57 [initandlisten] connection accepted from 127.0.0.1:61402 #273
+Tue Dec 27 01:56:32 [initandlisten] connection accepted from 127.0.0.1:61409 #274
+Tue Dec 27 01:56:32 [initandlisten] connection accepted from 127.0.0.1:61410 #275
+Tue Dec 27 01:59:17 [initandlisten] connection accepted from 127.0.0.1:61429 #276
+Tue Dec 27 01:59:29 [initandlisten] connection accepted from 127.0.0.1:61430 #277
+Tue Dec 27 02:00:19 [initandlisten] connection accepted from 127.0.0.1:61442 #278
+Tue Dec 27 02:04:40 [initandlisten] connection accepted from 127.0.0.1:61474 #279
+Tue Dec 27 02:05:15 [initandlisten] connection accepted from 127.0.0.1:61483 #280
+Tue Dec 27 02:15:00 [initandlisten] connection accepted from 127.0.0.1:61588 #281
+Tue Dec 27 02:15:03 [initandlisten] connection accepted from 127.0.0.1:61589 #282
+Tue Dec 27 02:15:08 [initandlisten] connection accepted from 127.0.0.1:61590 #283
+Tue Dec 27 02:15:08 [initandlisten] connection accepted from 127.0.0.1:61591 #284
+Tue Dec 27 02:16:05 [initandlisten] connection accepted from 127.0.0.1:61605 #285
+Tue Dec 27 02:16:05 [initandlisten] connection accepted from 127.0.0.1:61606 #286
+Tue Dec 27 02:17:38 [initandlisten] connection accepted from 127.0.0.1:61615 #287
+Tue Dec 27 02:19:57 [initandlisten] connection accepted from 127.0.0.1:61640 #288
+Tue Dec 27 11:00:37 [initandlisten] connection accepted from 127.0.0.1:61832 #289
+Tue Dec 27 11:00:37 [initandlisten] connection accepted from 127.0.0.1:61833 #290
+Tue Dec 27 11:00:51 [initandlisten] connection accepted from 127.0.0.1:61842 #291
+Tue Dec 27 11:01:06 [initandlisten] connection accepted from 127.0.0.1:61846 #292
+Tue Dec 27 11:01:06 [initandlisten] connection accepted from 127.0.0.1:61847 #293
+Tue Dec 27 11:06:50 [initandlisten] connection accepted from 127.0.0.1:61876 #294
+Tue Dec 27 11:07:04 [initandlisten] connection accepted from 127.0.0.1:61877 #295
+Tue Dec 27 11:07:16 [initandlisten] connection accepted from 127.0.0.1:61885 #296
+Tue Dec 27 11:07:16 [initandlisten] connection accepted from 127.0.0.1:61886 #297
+Tue Dec 27 11:50:05 [conn6] end connection 127.0.0.1:57426
+Tue Dec 27 11:50:05 got kill or ctrl c or hup signal 1 (Hangup: 1), will terminate after current cmd ends
+Tue Dec 27 11:50:05 [interruptThread] now exiting
+Tue Dec 27 11:50:05 dbexit: 
+Tue Dec 27 11:50:05 [interruptThread] shutdown: going to close listening sockets...
+Tue Dec 27 11:50:05 [interruptThread] closing listening socket: 6
+Tue Dec 27 11:50:05 [interruptThread] closing listening socket: 7
+Tue Dec 27 11:50:05 [interruptThread] closing listening socket: 8
+Tue Dec 27 11:50:05 [interruptThread] closing listening socket: 9
+Tue Dec 27 11:50:05 [interruptThread] removing socket file: /tmp/mongodb-27017.sock
+Tue Dec 27 11:50:05 [interruptThread] removing socket file: /tmp/mongodb-28017.sock
+Tue Dec 27 11:50:05 [interruptThread] shutdown: going to flush diaglog...
+Tue Dec 27 11:50:05 [interruptThread] shutdown: going to close sockets...
+Tue Dec 27 11:50:05 [interruptThread] shutdown: waiting for fs preallocator...
+Tue Dec 27 11:50:05 [interruptThread] shutdown: closing all files...
+Tue Dec 27 11:50:05 closeAllFiles() finished
+Tue Dec 27 11:50:05 [interruptThread] shutdown: removing fs lock...
+Tue Dec 27 11:50:05 [conn194] end connection 127.0.0.1:60654
+Tue Dec 27 11:50:05 [conn293] end connection 127.0.0.1:61847
+Tue Dec 27 11:50:05 [conn292] end connection 127.0.0.1:61846
+Tue Dec 27 11:50:05 [conn297] end connection 127.0.0.1:61886
+Tue Dec 27 11:50:05 [conn294] end connection 127.0.0.1:61876
+Tue Dec 27 11:50:05 [conn183] end connection 127.0.0.1:60623
+Tue Dec 27 11:50:05 [conn208] end connection 127.0.0.1:60824
+Tue Dec 27 11:50:05 [conn277] end connection 127.0.0.1:61430
+Tue Dec 27 11:50:05 [conn275] end connection 127.0.0.1:61410
+Tue Dec 27 11:50:05 [conn286] end connection 127.0.0.1:61606
+Tue Dec 27 11:50:05 [conn274] end connection 127.0.0.1:61409
+Tue Dec 27 11:50:05 [conn284] end connection 127.0.0.1:61591
+Tue Dec 27 11:50:05 [conn273] end connection 127.0.0.1:61402
+Tue Dec 27 11:50:05 [conn272] end connection 127.0.0.1:61398
+Tue Dec 27 11:50:05 [conn279] end connection 127.0.0.1:61474
+Tue Dec 27 11:50:05 [conn270] end connection 127.0.0.1:61389
+Tue Dec 27 11:50:05 [conn278] end connection 127.0.0.1:61442
+Tue Dec 27 11:50:05 [conn276] end connection 127.0.0.1:61429
+Tue Dec 27 11:50:05 [conn265] end connection 127.0.0.1:61372
+Tue Dec 27 11:50:05 [conn271] end connection 127.0.0.1:61393
+Tue Dec 27 11:50:05 [conn262] end connection 127.0.0.1:61360
+Tue Dec 27 11:50:05 [conn268] end connection 127.0.0.1:61384
+Tue Dec 27 11:50:05 [conn260] end connection 127.0.0.1:61358
+Tue Dec 27 11:50:05 [conn258] end connection 127.0.0.1:61346
+Tue Dec 27 11:50:05 [conn269] end connection 127.0.0.1:61388
+Tue Dec 27 11:50:05 [conn257] end connection 127.0.0.1:61342
+Tue Dec 27 11:50:05 [conn264] end connection 127.0.0.1:61370
+Tue Dec 27 11:50:05 [conn283] end connection 127.0.0.1:61590
+Tue Dec 27 11:50:05 [conn263] end connection 127.0.0.1:61367
+Tue Dec 27 11:50:05 [conn254] end connection 127.0.0.1:61332
+Tue Dec 27 11:50:05 [conn251] end connection 127.0.0.1:61318
+Tue Dec 27 11:50:05 [conn261] end connection 127.0.0.1:61359
+Tue Dec 27 11:50:05 [conn250] end connection 127.0.0.1:61314
+Tue Dec 27 11:50:05 [conn259] end connection 127.0.0.1:61354
+Tue Dec 27 11:50:05 [conn248] end connection 127.0.0.1:61199
+Tue Dec 27 11:50:05 [conn246] end connection 127.0.0.1:61197
+Tue Dec 27 11:50:05 [conn256] end connection 127.0.0.1:61337
+Tue Dec 27 11:50:05 [conn242] end connection 127.0.0.1:61151
+Tue Dec 27 11:50:05 [conn237] end connection 127.0.0.1:61145
+Tue Dec 27 11:50:05 [conn236] end connection 127.0.0.1:61144
+Tue Dec 27 11:50:05 [conn255] end connection 127.0.0.1:61333
+Tue Dec 27 11:50:05 [conn235] end connection 127.0.0.1:61143
+Tue Dec 27 11:50:05 [conn232] end connection 127.0.0.1:61078
+Tue Dec 27 11:50:05 [conn234] end connection 127.0.0.1:61142
+Tue Dec 27 11:50:05 [conn253] end connection 127.0.0.1:61328
+Tue Dec 27 11:50:05 [conn230] end connection 127.0.0.1:61076
+Tue Dec 27 11:50:05 [conn233] end connection 127.0.0.1:61139
+Tue Dec 27 11:50:05 [conn228] end connection 127.0.0.1:61058
+Tue Dec 27 11:50:05 [conn252] end connection 127.0.0.1:61327
+Tue Dec 27 11:50:05 [conn226] end connection 127.0.0.1:61051
+Tue Dec 27 11:50:05 [conn225] end connection 127.0.0.1:61047
+Tue Dec 27 11:50:05 [conn223] end connection 127.0.0.1:61037
+Tue Dec 27 11:50:05 [conn266] end connection 127.0.0.1:61373
+Tue Dec 27 11:50:05 [conn267] end connection 127.0.0.1:61377
+Tue Dec 27 11:50:05 [conn231] end connection 127.0.0.1:61077
+Tue Dec 27 11:50:05 [conn222] end connection 127.0.0.1:61020
+Tue Dec 27 11:50:05 [conn249] end connection 127.0.0.1:61260
+Tue Dec 27 11:50:05 [conn224] end connection 127.0.0.1:61045
+Tue Dec 27 11:50:05 [conn217] end connection 127.0.0.1:61000
+Tue Dec 27 11:50:05 [conn218] end connection 127.0.0.1:61001
+Tue Dec 27 11:50:05 [conn212] end connection 127.0.0.1:60981
+Tue Dec 27 11:50:05 [conn214] end connection 127.0.0.1:60983
+Tue Dec 27 11:50:05 [conn247] end connection 127.0.0.1:61198
+Tue Dec 27 11:50:05 [conn210] end connection 127.0.0.1:60961
+Tue Dec 27 11:50:05 [conn203] end connection 127.0.0.1:60781
+Tue Dec 27 11:50:05 [conn202] end connection 127.0.0.1:60780
+Tue Dec 27 11:50:05 [conn204] end connection 127.0.0.1:60796
+Tue Dec 27 11:50:05 [conn201] end connection 127.0.0.1:60759
+Tue Dec 27 11:50:05 [conn199] end connection 127.0.0.1:60660
+Tue Dec 27 11:50:05 [conn198] end connection 127.0.0.1:60659
+Tue Dec 27 11:50:05 [conn193] end connection 127.0.0.1:60653
+Tue Dec 27 11:50:05 [conn245] end connection 127.0.0.1:61196
+Tue Dec 27 11:50:05 [conn191] end connection 127.0.0.1:60649
+Tue Dec 27 11:50:05 [conn185] end connection 127.0.0.1:60627
+Tue Dec 27 11:50:05 [conn187] end connection 127.0.0.1:60629
+Tue Dec 27 11:50:05 [conn179] end connection 127.0.0.1:60616
+Tue Dec 27 11:50:05 [conn244] end connection 127.0.0.1:61178
+Tue Dec 27 11:50:05 [conn241] end connection 127.0.0.1:61150
+Tue Dec 27 11:50:05 [conn240] end connection 127.0.0.1:61149
+Tue Dec 27 11:50:05 [conn243] end connection 127.0.0.1:61177
+Tue Dec 27 11:50:05 [conn239] end connection 127.0.0.1:61148
+Tue Dec 27 11:50:05 [conn238] end connection 127.0.0.1:61147
+Tue Dec 27 11:50:05 [conn184] end connection 127.0.0.1:60626
+Tue Dec 27 11:50:05 dbexit: really exiting now
+Tue Dec 27 11:50:05 [conn229] end connection 127.0.0.1:61072
+Tue Dec 27 11:50:05 [conn174] end connection 127.0.0.1:60592
+Tue Dec 27 11:50:05 [conn227] end connection 127.0.0.1:61054
+Tue Dec 27 11:50:05 [conn168] end connection 127.0.0.1:60581
+Tue Dec 27 11:50:05 [conn171] end connection 127.0.0.1:60584
+Tue Dec 27 11:50:05 [conn219] end connection 127.0.0.1:61005
+Tue Dec 27 11:50:05 [conn167] end connection 127.0.0.1:60577
+Tue Dec 27 11:50:05 [conn166] end connection 127.0.0.1:60576
+Tue Dec 27 11:50:05 [conn215] end connection 127.0.0.1:60984
+Tue Dec 27 11:50:05 [conn155] end connection 127.0.0.1:60564
+Tue Dec 27 11:50:05 [conn221] end connection 127.0.0.1:61016
+Tue Dec 27 11:50:05 [conn216] end connection 127.0.0.1:60999
+Tue Dec 27 11:50:05 [conn151] end connection 127.0.0.1:60546
+Tue Dec 27 11:50:05 [conn211] end connection 127.0.0.1:60962
+Tue Dec 27 11:50:05 [conn165] end connection 127.0.0.1:60575
+Tue Dec 27 11:50:05 [conn192] end connection 127.0.0.1:60650
+Tue Dec 27 11:50:05 [conn209] end connection 127.0.0.1:60960
+Tue Dec 27 11:50:05 [conn149] end connection 127.0.0.1:60543
+Tue Dec 27 11:50:05 [conn163] end connection 127.0.0.1:60573
+Tue Dec 27 11:50:05 [conn162] end connection 127.0.0.1:60572
+Tue Dec 27 11:50:05 [conn206] end connection 127.0.0.1:60799
+Tue Dec 27 11:50:05 [conn190] end connection 127.0.0.1:60639
+Tue Dec 27 11:50:05 [conn147] end connection 127.0.0.1:60536
+Tue Dec 27 11:50:05 [conn160] end connection 127.0.0.1:60569
+Tue Dec 27 11:50:05 [conn205] end connection 127.0.0.1:60797
+Tue Dec 27 11:50:05 [conn158] end connection 127.0.0.1:60567
+Tue Dec 27 11:50:05 [conn156] end connection 127.0.0.1:60565
+Tue Dec 27 11:50:05 [conn188] end connection 127.0.0.1:60634
+Tue Dec 27 11:50:05 [conn196] end connection 127.0.0.1:60657
+Tue Dec 27 11:50:05 [conn186] end connection 127.0.0.1:60628
+Tue Dec 27 11:50:05 [conn220] end connection 127.0.0.1:61008
+Tue Dec 27 11:50:05 [conn138] end connection 127.0.0.1:60507
+Tue Dec 27 11:50:05 [conn132] end connection 127.0.0.1:60480
+Tue Dec 27 11:50:05 [conn189] end connection 127.0.0.1:60635
+Tue Dec 27 11:50:05 [conn175] end connection 127.0.0.1:60597
+Tue Dec 27 11:50:05 [conn170] end connection 127.0.0.1:60583
+Tue Dec 27 11:50:05 [conn197] end connection 127.0.0.1:60658
+Tue Dec 27 11:50:05 [conn154] end connection 127.0.0.1:60552
+Tue Dec 27 11:50:05 [conn213] end connection 127.0.0.1:60982
+Tue Dec 27 11:50:05 [conn161] end connection 127.0.0.1:60570
+Tue Dec 27 11:50:05 [conn159] end connection 127.0.0.1:60568
+Tue Dec 27 11:50:05 [conn182] end connection 127.0.0.1:60622
+Tue Dec 27 11:50:05 [conn153] end connection 127.0.0.1:60548
+Tue Dec 27 11:50:05 [conn152] end connection 127.0.0.1:60547
+Tue Dec 27 11:50:05 [conn137] end connection 127.0.0.1:60506
+Tue Dec 27 11:50:05 [conn136] end connection 127.0.0.1:60502
+Tue Dec 27 11:50:05 [conn150] end connection 127.0.0.1:60544
+Tue Dec 27 11:50:05 [conn207] end connection 127.0.0.1:60812
+Tue Dec 27 11:50:05 [conn180] end connection 127.0.0.1:60617
+Tue Dec 27 11:50:05 [conn126] end connection 127.0.0.1:60466
+Tue Dec 27 11:50:05 [conn145] end connection 127.0.0.1:60525
+Tue Dec 27 11:50:05 [conn129] end connection 127.0.0.1:60474
+Tue Dec 27 11:50:05 [conn178] end connection 127.0.0.1:60613
+Tue Dec 27 11:50:05 [conn177] end connection 127.0.0.1:60612
+Tue Dec 27 11:50:05 [conn176] end connection 127.0.0.1:60610
+Tue Dec 27 11:50:05 [conn200] end connection 127.0.0.1:60758
+Tue Dec 27 11:50:05 [conn123] end connection 127.0.0.1:60457
+Tue Dec 27 11:50:05 [conn172] end connection 127.0.0.1:60588
+Tue Dec 27 11:50:05 [conn173] end connection 127.0.0.1:60591
+Tue Dec 27 11:50:05 [conn143] end connection 127.0.0.1:60521
+Tue Dec 27 11:50:05 [conn169] end connection 127.0.0.1:60582
+Tue Dec 27 11:50:05 [conn141] end connection 127.0.0.1:60516
+Tue Dec 27 11:50:05 [conn195] end connection 127.0.0.1:60656
+Tue Dec 27 11:50:05 [conn157] end connection 127.0.0.1:60566
+Tue Dec 27 11:50:05 [conn135] end connection 127.0.0.1:60498
+Tue Dec 27 11:50:05 [conn181] end connection 127.0.0.1:60618
+Tue Dec 27 11:50:05 [conn148] end connection 127.0.0.1:60542
+Tue Dec 27 11:50:05 [conn131] end connection 127.0.0.1:60479
+Tue Dec 27 11:50:05 [conn130] end connection 127.0.0.1:60475
+Tue Dec 27 11:50:05 [conn124] end connection 127.0.0.1:60460
+Tue Dec 27 11:50:05 [conn144] end connection 127.0.0.1:60524
+Tue Dec 27 11:50:05 [conn146] end connection 127.0.0.1:60529
+mongod --help for help and startup options
+Tue Dec 27 16:18:25 [initandlisten] MongoDB starting : pid=79499 port=27017 dbpath=/data/db/ 64-bit 
+Tue Dec 27 16:18:25 [initandlisten] db version v1.8.2, pdfile version 4.5
+Tue Dec 27 16:18:25 [initandlisten] git version: 433bbaa14aaba6860da15bd4de8edf600f56501b
+Tue Dec 27 16:18:25 [initandlisten] build sys info: Darwin erh2.10gen.cc 9.6.0 Darwin Kernel Version 9.6.0: Mon Nov 24 17:37:00 PST 2008; root:xnu-1228.9.59~1/RELEASE_I386 i386 BOOST_LIB_VERSION=1_40
+Tue Dec 27 16:18:26 [initandlisten] waiting for connections on port 27017
+Tue Dec 27 16:18:26 [websvr] web admin interface listening on port 28017
+Tue Dec 27 16:18:37 [initandlisten] connection accepted from 127.0.0.1:51821 #1
+Tue Dec 27 16:18:38 [initandlisten] connection accepted from 127.0.0.1:51822 #2
+Tue Dec 27 16:18:53 [initandlisten] connection accepted from 127.0.0.1:51829 #3
+Tue Dec 27 16:18:53 [initandlisten] connection accepted from 127.0.0.1:51830 #4
+Tue Dec 27 16:19:12 [initandlisten] connection accepted from 127.0.0.1:51837 #5
+Tue Dec 27 16:19:12 [initandlisten] connection accepted from 127.0.0.1:51838 #6
+Tue Dec 27 16:22:17 [initandlisten] connection accepted from 127.0.0.1:51867 #7
+Tue Dec 27 16:22:17 [initandlisten] connection accepted from 127.0.0.1:51868 #8
+Tue Dec 27 16:29:46 [initandlisten] connection accepted from 127.0.0.1:52015 #9
+Tue Dec 27 16:30:00 [initandlisten] connection accepted from 127.0.0.1:52018 #10
+Tue Dec 27 16:30:00 [initandlisten] connection accepted from 127.0.0.1:52019 #11
+Tue Dec 27 16:30:15 [initandlisten] connection accepted from 127.0.0.1:52023 #12
+Tue Dec 27 16:30:28 [initandlisten] connection accepted from 127.0.0.1:52036 #13
+Tue Dec 27 16:30:28 [initandlisten] connection accepted from 127.0.0.1:52037 #14
+Tue Dec 27 16:44:53 [initandlisten] connection accepted from 127.0.0.1:52162 #15
+Tue Dec 27 16:44:59 [initandlisten] connection accepted from 127.0.0.1:52163 #16
+Tue Dec 27 16:45:19 [initandlisten] connection accepted from 127.0.0.1:52170 #17
+Tue Dec 27 16:45:19 [initandlisten] connection accepted from 127.0.0.1:52171 #18
+Tue Dec 27 16:46:01 [initandlisten] connection accepted from 127.0.0.1:52178 #19
+Tue Dec 27 16:46:16 [initandlisten] connection accepted from 127.0.0.1:52188 #20
+Tue Dec 27 16:46:16 [initandlisten] connection accepted from 127.0.0.1:52189 #21
+Tue Dec 27 16:56:10 [conn11] end connection 127.0.0.1:52019
+Tue Dec 27 16:56:10 [conn10] end connection 127.0.0.1:52018
+Tue Dec 27 16:56:10 [conn17] end connection 127.0.0.1:52170
+Tue Dec 27 16:56:10 [conn6] end connection 127.0.0.1:51838
+Tue Dec 27 16:56:10 [conn21] end connection 127.0.0.1:52189
+Tue Dec 27 16:56:10 [conn9] end connection 127.0.0.1:52015
+Tue Dec 27 16:56:10 [conn20] end connection 127.0.0.1:52188
+Tue Dec 27 16:56:10 [conn8] end connection 127.0.0.1:51868
+Tue Dec 27 16:56:10 [conn12] end connection 127.0.0.1:52023
+Tue Dec 27 16:56:10 [conn15] end connection 127.0.0.1:52162
+Tue Dec 27 16:56:10 [conn19] end connection 127.0.0.1:52178
+Tue Dec 27 16:56:10 [conn5] end connection 127.0.0.1:51837
+Tue Dec 27 16:56:10 [conn14] end connection 127.0.0.1:52037
+Tue Dec 27 16:56:10 [conn18] end connection 127.0.0.1:52171
+Tue Dec 27 16:56:10 [conn3] end connection 127.0.0.1:51829
+Tue Dec 27 16:56:10 [conn4] end connection 127.0.0.1:51830
+Tue Dec 27 16:56:10 [conn7] end connection 127.0.0.1:51867
+Tue Dec 27 16:56:10 [conn16] end connection 127.0.0.1:52163
+Tue Dec 27 16:56:10 [conn2] end connection 127.0.0.1:51822
+Tue Dec 27 16:56:10 [conn1] end connection 127.0.0.1:51821
+Tue Dec 27 16:56:10 [conn13] end connection 127.0.0.1:52036
+Tue Dec 27 16:56:18 [initandlisten] connection accepted from 127.0.0.1:52287 #22
+Tue Dec 27 16:56:18 [initandlisten] connection accepted from 127.0.0.1:52288 #23
+Tue Dec 27 16:56:42 [initandlisten] connection accepted from 127.0.0.1:52297 #24
+Tue Dec 27 16:56:42 [initandlisten] connection accepted from 127.0.0.1:52298 #25
+Tue Dec 27 16:57:17 [initandlisten] connection accepted from 127.0.0.1:52308 #26
+Tue Dec 27 16:57:17 [initandlisten] connection accepted from 127.0.0.1:52309 #27
+Tue Dec 27 16:59:36 [initandlisten] connection accepted from 127.0.0.1:52348 #28
+Tue Dec 27 16:59:37 [initandlisten] connection accepted from 127.0.0.1:52349 #29
+Tue Dec 27 16:59:38 [initandlisten] connection accepted from 127.0.0.1:52350 #30
+Tue Dec 27 17:08:20 [initandlisten] connection accepted from 127.0.0.1:52532 #31
+Tue Dec 27 17:08:21 [initandlisten] connection accepted from 127.0.0.1:52534 #32
+Tue Dec 27 17:18:02 [initandlisten] connection accepted from 127.0.0.1:52731 #33
+Tue Dec 27 17:18:02 [initandlisten] connection accepted from 127.0.0.1:52732 #34
+Tue Dec 27 17:18:35 [initandlisten] connection accepted from 127.0.0.1:52741 #35
+Tue Dec 27 17:26:21 [initandlisten] connection accepted from 127.0.0.1:52795 #36
+Tue Dec 27 17:27:43 [initandlisten] connection accepted from 127.0.0.1:52826 #37
+Tue Dec 27 17:34:59 [initandlisten] connection accepted from 127.0.0.1:52859 #38
+Tue Dec 27 17:35:03 [initandlisten] connection accepted from 127.0.0.1:52860 #39
+Tue Dec 27 17:37:32 [initandlisten] connection accepted from 127.0.0.1:52869 #40
+Tue Dec 27 17:37:32 [initandlisten] connection accepted from 127.0.0.1:52870 #41
+Tue Dec 27 17:37:43 [initandlisten] connection accepted from 127.0.0.1:52871 #42
+Tue Dec 27 17:37:43 [initandlisten] connection accepted from 127.0.0.1:52872 #43
+Tue Dec 27 17:38:17 [initandlisten] connection accepted from 127.0.0.1:52873 #44
+Tue Dec 27 17:39:58 [initandlisten] connection accepted from 127.0.0.1:52885 #45
+Tue Dec 27 17:40:01 [initandlisten] connection accepted from 127.0.0.1:52887 #46
+Tue Dec 27 17:40:03 [initandlisten] connection accepted from 127.0.0.1:52888 #47
+Tue Dec 27 17:40:12 [initandlisten] connection accepted from 127.0.0.1:52889 #48
+Tue Dec 27 17:40:35 [initandlisten] connection accepted from 127.0.0.1:52890 #49
+Tue Dec 27 17:40:36 [initandlisten] connection accepted from 127.0.0.1:52891 #50
+Tue Dec 27 17:40:45 [initandlisten] connection accepted from 127.0.0.1:52892 #51
+Tue Dec 27 17:40:48 [initandlisten] connection accepted from 127.0.0.1:52893 #52
+Tue Dec 27 17:40:55 [initandlisten] connection accepted from 127.0.0.1:52894 #53
+Tue Dec 27 17:40:58 [initandlisten] connection accepted from 127.0.0.1:52895 #54
+Tue Dec 27 17:41:13 [initandlisten] connection accepted from 127.0.0.1:52896 #55
+Tue Dec 27 17:41:24 [initandlisten] connection accepted from 127.0.0.1:52897 #56
+Tue Dec 27 17:41:55 [initandlisten] connection accepted from 127.0.0.1:52901 #57
+Tue Dec 27 17:42:08 [initandlisten] connection accepted from 127.0.0.1:52904 #58
+Tue Dec 27 17:44:57 [initandlisten] connection accepted from 127.0.0.1:52995 #59
+Tue Dec 27 17:45:25 [initandlisten] connection accepted from 127.0.0.1:52997 #60
+Tue Dec 27 17:45:25 [initandlisten] connection accepted from 127.0.0.1:52998 #61
+Tue Dec 27 17:45:48 [initandlisten] connection accepted from 127.0.0.1:52999 #62
+Tue Dec 27 17:47:55 [initandlisten] connection accepted from 127.0.0.1:53009 #63
+Tue Dec 27 17:47:55 [initandlisten] connection accepted from 127.0.0.1:53010 #64
+Tue Dec 27 17:48:29 [initandlisten] connection accepted from 127.0.0.1:53012 #65
+Tue Dec 27 17:48:29 [initandlisten] connection accepted from 127.0.0.1:53013 #66
+Tue Dec 27 17:48:31 [initandlisten] connection accepted from 127.0.0.1:53014 #67
+Tue Dec 27 17:48:32 [initandlisten] connection accepted from 127.0.0.1:53015 #68
+Tue Dec 27 17:48:33 [initandlisten] connection accepted from 127.0.0.1:53016 #69
+Tue Dec 27 17:48:34 [initandlisten] connection accepted from 127.0.0.1:53017 #70
+Tue Dec 27 17:48:35 [initandlisten] connection accepted from 127.0.0.1:53018 #71
+Tue Dec 27 17:48:35 [initandlisten] connection accepted from 127.0.0.1:53019 #72
+Tue Dec 27 17:48:42 [initandlisten] connection accepted from 127.0.0.1:53020 #73
+Tue Dec 27 17:49:27 [initandlisten] connection accepted from 127.0.0.1:53023 #74
+Tue Dec 27 17:50:52 [conn73] end connection 127.0.0.1:53020
+Tue Dec 27 17:50:53 [conn74] end connection 127.0.0.1:53023
+Tue Dec 27 17:50:53 [conn50] end connection 127.0.0.1:52891
+Tue Dec 27 17:50:53 [conn72] end connection 127.0.0.1:53019
+Tue Dec 27 17:50:53 [conn70] end connection 127.0.0.1:53017
+Tue Dec 27 17:50:53 [conn71] end connection 127.0.0.1:53018
+Tue Dec 27 17:50:53 [conn55] end connection 127.0.0.1:52896
+Tue Dec 27 17:50:53 [conn68] end connection 127.0.0.1:53015
+Tue Dec 27 17:50:53 [conn44] end connection 127.0.0.1:52873
+Tue Dec 27 17:50:53 [conn66] end connection 127.0.0.1:53013
+Tue Dec 27 17:50:53 [conn65] end connection 127.0.0.1:53012
+Tue Dec 27 17:50:53 [conn35] end connection 127.0.0.1:52741
+Tue Dec 27 17:50:53 [conn28] end connection 127.0.0.1:52348
+Tue Dec 27 17:50:53 [conn26] end connection 127.0.0.1:52308
+Tue Dec 27 17:50:53 [conn59] end connection 127.0.0.1:52995
+Tue Dec 27 17:50:53 [conn58] end connection 127.0.0.1:52904
+Tue Dec 27 17:50:53 [conn57] end connection 127.0.0.1:52901
+Tue Dec 27 17:50:53 [conn60] end connection 127.0.0.1:52997
+Tue Dec 27 17:50:53 [conn56] end connection 127.0.0.1:52897
+Tue Dec 27 17:50:53 [conn54] end connection 127.0.0.1:52895
+Tue Dec 27 17:50:53 [conn53] end connection 127.0.0.1:52894
+Tue Dec 27 17:50:53 [conn52] end connection 127.0.0.1:52893
+Tue Dec 27 17:50:53 [conn51] end connection 127.0.0.1:52892
+Tue Dec 27 17:50:53 [conn49] end connection 127.0.0.1:52890
+Tue Dec 27 17:50:53 [conn69] end connection 127.0.0.1:53016
+Tue Dec 27 17:50:53 [conn67] end connection 127.0.0.1:53014
+Tue Dec 27 17:50:53 [conn48] end connection 127.0.0.1:52889
+Tue Dec 27 17:50:53 [conn42] end connection 127.0.0.1:52871
+Tue Dec 27 17:50:53 [conn43] end connection 127.0.0.1:52872
+Tue Dec 27 17:50:53 [conn47] end connection 127.0.0.1:52888
+Tue Dec 27 17:50:53 [conn41] end connection 127.0.0.1:52870
+Tue Dec 27 17:50:53 [conn39] end connection 127.0.0.1:52860
+Tue Dec 27 17:50:53 [conn46] end connection 127.0.0.1:52887
+Tue Dec 27 17:50:53 [conn45] end connection 127.0.0.1:52885
+Tue Dec 27 17:50:53 [conn64] end connection 127.0.0.1:53010
+Tue Dec 27 17:50:53 [conn36] end connection 127.0.0.1:52795
+Tue Dec 27 17:50:53 [conn40] end connection 127.0.0.1:52869
+Tue Dec 27 17:50:53 [conn32] end connection 127.0.0.1:52534
+Tue Dec 27 17:50:53 [conn31] end connection 127.0.0.1:52532
+Tue Dec 27 17:50:53 [conn63] end connection 127.0.0.1:53009
+Tue Dec 27 17:50:53 [conn38] end connection 127.0.0.1:52859
+Tue Dec 27 17:50:53 [conn29] end connection 127.0.0.1:52349
+Tue Dec 27 17:50:53 [conn37] end connection 127.0.0.1:52826
+Tue Dec 27 17:50:53 [conn27] end connection 127.0.0.1:52309
+Tue Dec 27 17:50:53 [conn34] end connection 127.0.0.1:52732
+Tue Dec 27 17:50:53 [conn25] end connection 127.0.0.1:52298
+Tue Dec 27 17:50:53 [conn33] end connection 127.0.0.1:52731
+Tue Dec 27 17:50:53 [conn62] end connection 127.0.0.1:52999
+Tue Dec 27 17:50:53 [conn30] end connection 127.0.0.1:52350
+Tue Dec 27 17:50:53 [conn24] end connection 127.0.0.1:52297
+Tue Dec 27 17:50:53 [conn23] end connection 127.0.0.1:52288
+Tue Dec 27 17:50:53 [conn22] end connection 127.0.0.1:52287
+Tue Dec 27 17:50:53 [conn61] end connection 127.0.0.1:52998
+Tue Dec 27 17:51:01 [initandlisten] connection accepted from 127.0.0.1:53048 #75
+Tue Dec 27 17:51:01 [initandlisten] connection accepted from 127.0.0.1:53049 #76
+Tue Dec 27 17:51:09 [initandlisten] connection accepted from 127.0.0.1:53050 #77
+Tue Dec 27 17:51:09 [initandlisten] connection accepted from 127.0.0.1:53051 #78
+Tue Dec 27 17:51:29 [conn78] end connection 127.0.0.1:53051
+Tue Dec 27 17:51:29 [conn75] end connection 127.0.0.1:53048
+Tue Dec 27 17:51:29 [conn77] end connection 127.0.0.1:53050
+Tue Dec 27 17:51:29 [conn76] end connection 127.0.0.1:53049
+Tue Dec 27 17:51:36 [initandlisten] connection accepted from 127.0.0.1:53053 #79
+Tue Dec 27 17:51:36 [initandlisten] connection accepted from 127.0.0.1:53054 #80
+Tue Dec 27 17:51:40 [initandlisten] connection accepted from 127.0.0.1:53055 #81
+Tue Dec 27 17:52:19 [initandlisten] connection accepted from 127.0.0.1:53074 #82
+Tue Dec 27 17:52:43 [initandlisten] connection accepted from 127.0.0.1:53079 #83
+Tue Dec 27 17:52:48 [initandlisten] connection accepted from 127.0.0.1:53081 #84
+Tue Dec 27 17:52:48 [initandlisten] connection accepted from 127.0.0.1:53082 #85
+Tue Dec 27 17:55:04 [conn84] end connection 127.0.0.1:53081
+Tue Dec 27 17:55:04 [conn85] end connection 127.0.0.1:53082
+Tue Dec 27 17:55:04 [conn80] end connection 127.0.0.1:53054
+Tue Dec 27 17:55:04 [conn79] end connection 127.0.0.1:53053
+Tue Dec 27 17:55:04 [conn83] end connection 127.0.0.1:53079
+Tue Dec 27 17:55:04 [conn81] end connection 127.0.0.1:53055
+Tue Dec 27 17:55:13 [initandlisten] connection accepted from 127.0.0.1:53098 #86
+Tue Dec 27 17:55:13 [initandlisten] connection accepted from 127.0.0.1:53099 #87
+Tue Dec 27 17:55:17 [initandlisten] connection accepted from 127.0.0.1:53100 #88
+Tue Dec 27 17:55:22 [initandlisten] connection accepted from 127.0.0.1:53101 #89
+Tue Dec 27 17:55:27 [initandlisten] connection accepted from 127.0.0.1:53102 #90
+Tue Dec 27 17:55:27 [initandlisten] connection accepted from 127.0.0.1:53103 #91
+Tue Dec 27 17:56:51 [initandlisten] connection accepted from 127.0.0.1:53107 #92
+Tue Dec 27 17:56:52 [initandlisten] connection accepted from 127.0.0.1:53109 #93
+Tue Dec 27 17:57:01 [initandlisten] connection accepted from 127.0.0.1:53110 #94
+Tue Dec 27 17:57:01 [initandlisten] connection accepted from 127.0.0.1:53111 #95
+Tue Dec 27 17:57:33 [initandlisten] connection accepted from 127.0.0.1:53112 #96
+Tue Dec 27 18:18:18 [initandlisten] connection accepted from 127.0.0.1:53351 #97
+Tue Dec 27 18:18:22 [initandlisten] connection accepted from 127.0.0.1:53353 #98
+Tue Dec 27 18:41:12 [conn98] end connection 127.0.0.1:53353
+Tue Dec 27 18:41:12 [conn95] end connection 127.0.0.1:53111
+Tue Dec 27 18:41:12 [conn97] end connection 127.0.0.1:53351
+Tue Dec 27 18:41:12 [conn96] end connection 127.0.0.1:53112
+Tue Dec 27 18:41:12 [conn91] end connection 127.0.0.1:53103
+Tue Dec 27 18:41:12 [conn94] end connection 127.0.0.1:53110
+Tue Dec 27 18:41:12 [conn90] end connection 127.0.0.1:53102
+Tue Dec 27 18:41:12 [conn93] end connection 127.0.0.1:53109
+Tue Dec 27 18:41:12 [conn92] end connection 127.0.0.1:53107
+Tue Dec 27 18:41:12 [conn86] end connection 127.0.0.1:53098
+Tue Dec 27 18:41:12 [conn89] end connection 127.0.0.1:53101
+Tue Dec 27 18:41:12 [conn88] end connection 127.0.0.1:53100
+Tue Dec 27 18:41:12 [conn87] end connection 127.0.0.1:53099
+Tue Dec 27 22:32:44 [conn82] end connection 127.0.0.1:53074

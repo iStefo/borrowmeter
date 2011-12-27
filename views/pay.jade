@@ -1,0 +1,20 @@
+header
+	h1 Payment
+	#loginbutton.navbutton.green(style="z-index: 12;")
+		span Ok
+	#cancelbutton.navbutton.red
+		span(style="margin-right: 50px") X
+#logincontainer
+	form#payform(method="post", action="/pay/")
+		label(for="payment[subject]") Subject:<br />
+		input(type="text", name="payment[subject]")
+		label(for="payment[value]") Value (in CENT):<br />
+		input(type="tel", name="payment[value]")
+		input#submit(type="submit", value="Pay!")
+script
+	$('#loginbutton span').click(function(){
+		$('#submit').click();
+	})
+	$('#cancelbutton span').click(function(){
+		location.replace('/');
+	})
