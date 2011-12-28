@@ -5,6 +5,8 @@ test = require 'assert'
 Db = require('mongodb').Db
 Connection = require('mongodb').Connection
 Server = require('mongodb').Server
+BSON = require('mongodb').BSONPure
+
 
 host = 'localhost'
 port = Connection.DEFAULT_PORT
@@ -85,11 +87,21 @@ app.post '/pay/', (req, res) ->
 			collection.insert { subject: req.body.payment.subject, value: req.body.payment.value, by: req.session.user.name }
 			res.redirect '/'
 
-
 app.get '/pay*', (req, res) ->
 	if not req.session.login
 		res.redirect '/login/'
 		return 0
 	res.render 'pay'
+
+app.post '/delete', (req, res) ->
+	if not req.session.login
+		res.redirect '/login/'
+		return 0
+	console.log "Delete #{req.body.id}"
+	db.open (err, db) ->
+		db.collection 'payment', (err, collection) ->
+			collection.remove { _id: BSON.ObjectID.createFromHexString(req.body.id) }, (err, result) ->
+				console.log err, result
+				res.send JSON.stringify err
 
 app.listen 1337

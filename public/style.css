@@ -2,6 +2,12 @@ html, body, * {
 	margin: 0;
 	padding: 0;
 	font-family: "Helvetica", Arial;
+
+}
+
+body, htmö {
+	background: #e4e4e4;
+	min-height: 436px;
 }
 
 header {
@@ -12,6 +18,16 @@ header {
 	top: 0;
 	left: 0;
 	z-index: 10;
+}
+
+header.login {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+#loginbutton {
+	position: absolute;
 }
 
 header h1 {
@@ -65,8 +81,6 @@ header h1 {
 	top: 80px;
 	left: 0;
 	right: 0;
-	bottom: 0;
-	background: #e4e4e4;
 }
 
 #logincontainer label {

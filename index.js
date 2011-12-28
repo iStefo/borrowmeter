@@ -1,5 +1,5 @@
 (function() {
-  var Connection, Db, Server, app, db, express, fs, host, port, test;
+  var BSON, Connection, Db, Server, app, db, express, fs, host, port, test;
 
   fs = require('fs');
 
@@ -17,6 +17,8 @@
   Connection = require('mongodb').Connection;
 
   Server = require('mongodb').Server;
+
+  BSON = require('mongodb').BSONPure;
 
   host = 'localhost';
 
@@ -143,6 +145,24 @@
       return 0;
     }
     return res.render('pay');
+  });
+
+  app.post('/delete', function(req, res) {
+    if (!req.session.login) {
+      res.redirect('/login/');
+      return 0;
+    }
+    console.log("Delete " + req.body.id);
+    return db.open(function(err, db) {
+      return db.collection('payment', function(err, collection) {
+        return collection.remove({
+          _id: BSON.ObjectID.createFromHexString(req.body.id)
+        }, function(err, result) {
+          console.log(err, result);
+          return res.send(JSON.stringify(err));
+        });
+      });
+    });
   });
 
   app.listen(1337);

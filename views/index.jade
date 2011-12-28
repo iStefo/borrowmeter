@@ -1,6 +1,6 @@
 header
 	h1 #{name}
-	if balance > 0
+	if balance >= 0
 		#paybutton.navbutton.green
 			span #{balance/100}
 			span +
@@ -11,11 +11,11 @@ header
 #container
 	for payment in payments
 		if payment.by == name
-			.payment
+			.payment(data-subject=payment.subject, data-by=payment.by, data-id=payment._id)
 				span.subject #{payment.subject}
 				span.value #{payment.value/100}
 		else
-			.payment.alien
+			.payment.alien(data-subject=payment.subject, data-by=payment.by, data-id=payment._id)
 				span.subject #{payment.subject}
 				span.value -#{payment.value/100}
 div(style="width:0; height: 0; visibility: hidden")
@@ -25,3 +25,13 @@ script
 		$('#payform').submit();
 		//location.replace('/pay');
 	});
+	$('#container div').swipe({swipeRight: function() {
+		var answer = confirm("Delete " + $(this).data('subject') + " by " + $(this).data('by') + "?");
+		self = $(this);
+		if (answer) {
+			$.post("/delete", { id: self.data('id')}, function(data){
+				self.fadeOut();
+				location.replace('/');
+			});
+		}
+	}});
