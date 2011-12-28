@@ -35,7 +35,7 @@
   app.use(express.session({
     secret: "borrowmeter",
     cookie: {
-      expires: new Date(Date.now() + 3600000),
+      maxAge: 3600000,
       secure: true
     }
   }));
